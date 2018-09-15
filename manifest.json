@@ -1,0 +1,21 @@
+{
+  "name": "GitYak",
+  "version": "1.0",
+  "description": "Build an Extension!",
+  "manifest_version": 2,
+  "web_accessible_resources": [
+    "bg.png",
+    "chat-icon.svg"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://github.com/*"
+      ],
+      "js": [
+        "jquery.js",
+        "add_timer.js"
+      ]
+    }
+  ]
+}
